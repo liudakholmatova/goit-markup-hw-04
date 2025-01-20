@@ -125,12 +125,12 @@ color: var(--color-brand);
 /** hero-section*/
 
 .hero-container { 
+   
      height: 600px; 
  padding-top: 200px; 
      padding-bottom: 200px; 
-   
     background-color: var(--color-bg-dark);
-    background-image: url(https://drive.google.com/file/d/10CT7dkJeSzEBS69V31VusyrFCCGnOjJa/view);
+   /* background-image: url("https: //drive.google.com/file/d/10CT7dkJeSzEBS69V31VusyrFCCGnOjJa/view");*/
 }
 .hero-title {
 font-weight: 900;
@@ -181,7 +181,9 @@ background-color: var(--color-secondary);
     padding-top: 30px;
     padding-bottom: 10px;
 }
-
+.features-svg {
+    stroke: var(--color-brand);
+}
 
 /*benefit-section*/
 
