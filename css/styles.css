@@ -56,8 +56,6 @@ ul {
 }
 
 /* Header setion*/
-
-
 .header-container {
     display: flex;
     align-items: center;
@@ -138,23 +136,14 @@ color: var(--color-brand);
 /** hero-section*/
 
 .hero-container { 
-   /* position: relative; */
      height: 600px; 
  padding-top: 200px; 
      padding-bottom: 200px; 
-    background-color: var(--color-bg-dark);
-   /* background-image: url("https: //drive.google.com/file/d/10CT7dkJeSzEBS69V31VusyrFCCGnOjJa/view") */
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: url(../images/overlay.jpg);
+    background-position: center;
+    
 }
-/* .hero-container::before {
-    position: absolute;
-   top: 0;
-    left: 0;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-} */
 .hero-title {
 font-weight: 900;
 font-size: 44px;
@@ -174,6 +163,9 @@ margin: 0 auto;
     text-align: center;
     background-color: var(--color-brand) ;
     color: var(--color-light);
+    transition-property: backround-color;
+    transition-duration: 250s;
+    transition-timing-function: (0.4, 0, 0.2, 1);
     border: none;
    width: 200px;
    height: 50px;
@@ -183,7 +175,7 @@ margin: 0 auto;
 }
 .hero-button:hover,
 .hero-button:focus {
-background-color: rgb(33,150,243,1);
+background-color: rgb(57, 138, 201);
 }
 .backgrop {
     position: fixed;
@@ -192,6 +184,7 @@ background-color: rgb(33,150,243,1);
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0, 0.3);
+    
 }
 .backgrop.is-hidden {
     opacity: 0;
@@ -199,6 +192,8 @@ background-color: rgb(33,150,243,1);
     pointer-events: none;
 }
 .modal-wrapper {
+    
+  z-index: 2;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -222,6 +217,7 @@ background-color: rgb(33,150,243,1);
     background-color: transparent;
     border: 1px solid rgba(0,0,0, 0.1);
     border-radius: 50%;
+   
 }
 
 
@@ -283,16 +279,17 @@ background-color: rgb(33,150,243,1);
 .list-img {
     display: flex;
 gap: 30px;
+
 }
 .item-img {
      position: relative; 
+    z-index: -1;
 flex-basis: calc((100% - 60px) / 3);
 }
 .text-img {
     position: absolute;
     bottom: 0;
     left: 0;
-    content: "";
         display: block;
         width: 100%;
         height: 70px;
